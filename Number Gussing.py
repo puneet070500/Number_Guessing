@@ -1,6 +1,5 @@
 import random
 import math
-asdfgh
 def Number_Guessing(a,b):
    x = random.randint(a,b+1)
    print(f"Guess the number between {a} and {b}! You have 3 attempts.")
