@@ -10,7 +10,7 @@ def Number_Guessing(a,b):
        guess = int(input("Enter your guess: "))
 
        if guess == x:
-           print(f"Congratulations! You guessed the correct number, {x}, in {count - int(math.log2(abs(x - guess)))} attempts.")
+           print(f"Congratulations! You guessed the correct number, {x}, in {count - int(math.log2(abs(x - guess)))}")
            break
        elif guess > x:
            print("Your guess is too high. Try again.")
