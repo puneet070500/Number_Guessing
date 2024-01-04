@@ -1,5 +1,6 @@
 import random
 import math
+
 def Number_Guessing(a,b):
    x = random.randint(a,b+1)
    print(f"Guess the number between {a} and {b}! You have 3 attempts.")
@@ -9,7 +10,7 @@ def Number_Guessing(a,b):
        guess = int(input("Enter your guess: "))
 
        if guess == x:
-           print(f"Congratulations! You guessed the correct number, {x}")
+           print(f"Congratulations! You guessed the correct number, {x}, in {count - int(math.log2(abs(x - guess)))} attempts.")
            break
        elif guess > x:
            print("Your guess is too high. Try again.")
